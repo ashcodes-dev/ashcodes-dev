@@ -2,7 +2,7 @@
 
 🎓 I'm a Class 12 student passionate about Computer Science and technology.  
 🌍 I'm aiming to study in **Canada or Germany**, or work in **India's tech industry**.  
-💻 I code in **Python**, **C++**, and am learning about **real-world tech & projects**.  
+💻 I code in **Python**, **C#**, and am learning about **real-world tech & projects**.  
 🎯 My current goal: Build real-life skills and create cool projects every week!
 
 ## 📌 What I’m working on:
