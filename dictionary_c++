@@ -5,6 +5,8 @@
 char words_list[5000][100];
 void display();
 void find_big();
+void search();
+void search_rank();
 
 void load_data(FILE* fp, int data_size);
 void menu();
@@ -23,7 +25,7 @@ int main() {
 	printf("welcome to most popluar words dictionary\n");
 	load_data(fp, 4000);
 	menu();
-	
+
 	return 0;
 }
 
@@ -36,12 +38,12 @@ void load_data(FILE* fp, int data_size) {
 void menu() {
 	bool running = true;
 	while (running == true) {
-		 int choice;
+		int choice;
 		printf("what do you want to do \n");
 		printf("1.display the words by popluarity 2.search a word 3. search by popluarity rank 4. find biggest word \n");
 		printf("5.list the most popluar words by alphabetical order 6.display n elements by order 7. to quit the app\n");
 		scanf(" %d", &choice);
-		switch ( choice)
+		switch (choice)
 		{
 		case 1:
 			/// display function
@@ -49,50 +51,53 @@ void menu() {
 			break;
 		case 2:
 			////search function 
+			search();
 			break;
-		case 3 :
+		case 3:
 			///search by popluairty
+			search_rank();
 			break;
-		case 4 :
-			/// list the most popluar words fucntion use sort and display again 
+		case 4:
+			/// find the biggest element
+			find_big();
 			break;
-		case 5 :
+		case 5:
 			///display n elemensts fucntion 
 			break;
-		case 6 :
+		case 6:
 			running = false;
 			break;
-		default :
+		default:
 			printf("invalid choice \n");
 		}
 
 	}
-	
-	 
-	
+
+
+
 }
 void display() {
 	int i = 0, choice;
 	bool running = true;
-	printf("%d. %s \n", i+1, words_list[i]);
+	printf("%d. %s \n", i + 1, words_list[i]);
 	while (running == true) {
-		
+
 		printf("1. next 2.previous 3 . menu \n");
 		scanf(" %d", &choice);
 		switch (choice)
 		{
-		case 1 :
+		case 1:
 			i++;
-			printf("%d. %s\n", i+1, words_list[i]);
+			printf("%d. %s\n", i + 1, words_list[i]);
 			break;
-		case 2 :
+		case 2:
 			if (i < 1) {
-				printf("%d. %s\n", i+1, words_list[i]);
+				printf("%d. %s\n", i + 1, words_list[i]);
 			}
 			else {
 				i--;
-				printf("%d. %s\n", i+1, words_list[i]);
-				
+				printf("%d. %s\n", i + 1, words_list[i]);
+
 			}
 			break;
 		case 3:
@@ -125,20 +130,53 @@ void find_big() {
 				if (big < j) {
 					big = j;
 					int k;
-					for( k = 0; words_list[i][k] != '\0' && k < 19; k++) {
+					for (k = 0; words_list[i][k] != '\0' && k < 19; k++) {
 						buffer[k] = words_list[i][k];
 					}
 					buffer[k] = '\0';
 
 				}
 				break;
-				
+
 			}
 		}
 		j = 0;
 	}
-	printf("%d\n", big);
-	printf("%s", buffer);
-    
-}
+	printf("biggest word is %s it has %d letters", buffer, big);
 
+}void search() {
+
+	char buffer[20];
+	int i = 0;
+	bool found = false;
+	printf("enter the word you want to search \n");
+	scanf(" %s", buffer);
+	for (i; i < 4000; i++) {
+		int j = 0;
+		while (buffer[j] == words_list[i][j]) {
+			if (buffer[j] == '\0') {
+				printf("word found %s is %d . most popluar \n ", words_list[i], i +1);
+				found = true;
+			}
+			j++;
+		}
+
+
+		
+		
+			}
+	if (found == false) {
+		printf("word doesnt exist in data \n");
+	}
+
+		
+
+}
+void search_rank() {
+	int i = 0;
+	printf("enter the rank of word ");
+	scanf(" %d", &i);
+	printf("%d most popluar word is %s \n", i , words_list[i - 1]);
+
+}
+	
