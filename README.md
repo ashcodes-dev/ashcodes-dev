@@ -1,20 +1,42 @@
-# 👋 Hello, I'm Ash!
+# Hi, I'm Ash 👋
 
-🎓 I'm a Class 12 student passionate about Computer Science and technology.  
-🌍 I'm aiming to study in **Canada or Germany**, or work in **India's tech industry**.  
-💻 I code in **Python**, **C#**, and am learning about **real-world tech & projects**.  
-🎯 My current goal: Build real-life skills and create cool projects every week!
+Computer Science student interested in low-level programming and game development.
 
-## 📌 What I’m working on:
-- Learning **DSA and GitHub basics**
-- Creating small projects to build my portfolio
-- Exploring **Machine Learning**, **Game Dev**, and **AI**
+## Currently working on
 
-## 🔧 Tech Stack:
-`Python` `C++` `Git` `Linux` `Unity (C#)` `Pygame`
+- Learning C and modern C++
+- Building 2D games with raylib
+- Writing game systems from scratch (tilemaps, camera, collisions, file loading)
+- Learning Git and contributing projects to GitHub
 
----
+## Interests
 
-## 📫 How to reach me:
-- Email: [Add later]
-- LinkedIn: [Add later]
+- Game engines
+- Graphics programming
+- Open source software
+- Computer architecture
+- Algorithms
+
+## Languages & Tools
+
+- C
+- C++
+- Git
+- GitHub
+- raylib
+- Tiled
+- Blender
+- VS Code
+- visual studio
+
+## Current Projects
+
+- Tilemap renderer
+- 2D game engine experiments
+- C utility libraries
+
+## Goals
+
+- Become proficient in modern C++ 
+- Build complete games without relying on large engines
+- Learn graphics and engine programming
