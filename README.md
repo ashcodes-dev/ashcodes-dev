@@ -30,9 +30,11 @@ Computer Science student interested in low-level programming and game developmen
 - visual studio
 
 ## Current Projects
-
+ currently working 
+ ms word clone
 - Tilemap renderer
 - 2D game engine experiments
+- future ideas
 - C utility libraries
 
 ## Goals
