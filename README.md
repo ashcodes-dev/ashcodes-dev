@@ -6,7 +6,7 @@ Computer Science student interested in low-level programming and game developmen
 
 - Learning C and modern C++
 - Building 2D games with raylib
-- making appliactions using c++ 
+- making applications using c++ 
 - Writing game systems from scratch (tilemaps, camera, collisions, file loading)
 - Learning Git and contributing projects to GitHub
 
